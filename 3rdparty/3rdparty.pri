@@ -17,6 +17,9 @@ win32-msvc* {
     win32-msvc2015 {
         message("msvc2015 detected")
         WIN_DEPS_VERSION = v140
+    } win32-msvc2013 {
+        message("msvc2013 detected")
+        WIN_DEPS_VERSION = v120
     } else {
         error("Your msvc version is not suppoted. qredisclient requires msvc2015+")
     }
